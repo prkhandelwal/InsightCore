@@ -114,15 +114,16 @@ namespace ScrapeService.ScrapeServices
             Browser.AllowAutoRedirect = true;
             Browser.AllowMetaRedirect = false;
             Browser.UserAgent = new FakeUserAgent("EdgeAgent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36 Edge/15.15063");
-            WebPage MainPage = await Browser.NavigateToPageAsync(new Uri("http://www.msn.com/en-in/news/india"));
+            WebPage MainPage = await Browser.NavigateToPageAsync(new Uri("http://www.msn.com/en-in/news/"));
             //HtmlNode Title = MainPage.Html.CssSelect(".navbar-brand").First();
             HtmlNode Title = MainPage.Html.CssSelect("title").FirstOrDefault();
             string titleName = Title.InnerText;
-            List<HtmlNode> mainHeadLines = MainPage.Html.CssSelect(".rc-item-js").ToList();
+            List<HtmlNode> mainHeadLines = MainPage.Html.CssSelect(".smalla").ToList();
             //List<HtmlNode> subHeadLines = MainPage.Html.CssSelect(".rc-item-js rc-item show").ToList();
             for (int i = 0; i < mainHeadLines.Count(); i++)
             {
-                msnData data = new msnData() { Category = "Main", InnerText = mainHeadLines[i].InnerText.CleanInnerText(), href = mainHeadLines[i].ChildNodes["div"].ChildNodes["div"].ChildNodes["ul"].ChildNodes["li"].ChildNodes["a"].Attributes["href"].Value };
+                //msnData data = new msnData() { Category = "Main", InnerText = mainHeadLines[i].InnerText.CleanInnerText(), href = mainHeadLines[i].ChildNodes["div"].ChildNodes["div"].ChildNodes["ul"].ChildNodes["li"].ChildNodes["a"].Attributes["href"].Value };
+                msnData data = new msnData() { Category = "Main", InnerText = mainHeadLines[i].InnerText.CleanInnerText(), href = mainHeadLines[i].ChildNodes["a"].Attributes["href"].Value };
                 HeadLines.Add(data);
             }
 
