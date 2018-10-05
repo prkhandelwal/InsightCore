@@ -9,5 +9,6 @@ namespace ScrapeService.Models
         public string Category { get; set; }
         public string InnerText { get; set; }
         public string href { get; set; }
+        public string ImgUri { get; set; }
     }
 }
