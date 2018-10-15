@@ -6,16 +6,16 @@ namespace ScrapeService.Twitter
 {
     public class creds
     {
-        public const String ConsumerKey = "FCu0D5jI5wiUo5xIFTe8eFnDm";
+        public const String ConsumerKey = "8Dg8MLcQCFfFV50jcNdbjBivn";
 
-        public const String ConsumerSecret = "tvj1LRxJl9WnO2KxM03iCSReXs0e6Taxv4sz3EBpm1SBARXbHn";
+        public const String ConsumerSecret = "ybxvSXABsQsx7SQdiuH6GabnXLZQQUmk0ZndjGRlNqysz2mDSm";
 
         public const String Owner = "K2Prk";
 
-        public const String OwnerId = "4672579898";
+        public const String OwnerId = "15907671";
 
-        public const String AccessToken = "4672579898-iv7HXCPphzlNzEnEPQnDpX0dUwZN5PBYDSmWWkX";
+        public const String AccessToken = "958246564232708096-gSW1viG5YoagLSbAAYk8XwCZU046Hql";
 
-        public const String AccessSecret = "3tJrZt6lxYckOHjKps0Uslm8vChHscT2AkKB4tbUy8gR8";
+        public const String AccessSecret = "AySkJVTRjwdA9nZAh5xvQGDcmlirYjana0kSE9TlFhumY";
     }
 }

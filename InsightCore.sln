@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2016
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InsightCore", "InsightCore\InsightCore.csproj", "{C9CE6D4C-80EB-441B-9158-573CABD4B7D7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InsightCore", "InsightCore\InsightCore.csproj", "{C9CE6D4C-80EB-441B-9158-573CABD4B7D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScrapeService", "ScrapeService\ScrapeService.csproj", "{3FCB0A9F-011E-4277-AD16-5F2668555A52}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ScrapeService", "ScrapeService\ScrapeService.csproj", "{3FCB0A9F-011E-4277-AD16-5F2668555A52}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Analytics", "Analytics\Analytics.csproj", "{BD863447-749A-48B8-83EC-EE35BADC3AA6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{3FCB0A9F-011E-4277-AD16-5F2668555A52}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3FCB0A9F-011E-4277-AD16-5F2668555A52}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3FCB0A9F-011E-4277-AD16-5F2668555A52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD863447-749A-48B8-83EC-EE35BADC3AA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD863447-749A-48B8-83EC-EE35BADC3AA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD863447-749A-48B8-83EC-EE35BADC3AA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD863447-749A-48B8-83EC-EE35BADC3AA6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

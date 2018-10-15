@@ -16,6 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Analytics\Analytics.csproj" />
     <ProjectReference Include="..\ScrapeService\ScrapeService.csproj" />
   </ItemGroup>
 

@@ -23,7 +23,7 @@ namespace ScrapeService.ScrapeServices
             List<msnData> HeadLines = new List<msnData>();
             Browser.AllowAutoRedirect = true;
             Browser.AllowMetaRedirect = false;
-            Browser.UserAgent = new FakeUserAgent("EdgeAgent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36 Edge/15.15063");
+            Browser.UserAgent = new FakeUserAgent("EdgeAgent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36 Edge/18.17763");
             WebPage MainPage = await Browser.NavigateToPageAsync(new Uri("http://www.msn.com/en-in/sports/"));
             HtmlNode Title = MainPage.Html.CssSelect("title").FirstOrDefault();
             string titleName = Title.InnerText;
@@ -54,7 +54,7 @@ namespace ScrapeService.ScrapeServices
             List<msnData> HeadLines = new List<msnData>();
             Browser.AllowAutoRedirect = true;
             Browser.AllowMetaRedirect = false;
-            Browser.UserAgent = new FakeUserAgent("EdgeAgent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36 Edge/15.15063");
+            Browser.UserAgent = new FakeUserAgent("EdgeAgent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36 Edge/18.17763");
             WebPage MainPage = await Browser.NavigateToPageAsync(new Uri("http://www.msn.com/en-in/money/"));
             HtmlNode Title = MainPage.Html.CssSelect("title").FirstOrDefault();
             string titleName = Title.InnerText;
@@ -85,7 +85,7 @@ namespace ScrapeService.ScrapeServices
             List<msnData> HeadLines = new List<msnData>();
             Browser.AllowAutoRedirect = true;
             Browser.AllowMetaRedirect = false;
-            Browser.UserAgent = new FakeUserAgent("EdgeAgent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36 Edge/15.15063");
+            Browser.UserAgent = new FakeUserAgent("EdgeAgent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36 Edge/18.17763");
             WebPage MainPage = await Browser.NavigateToPageAsync(new Uri("http://www.msn.com/en-in/entertainment/"));
             HtmlNode Title = MainPage.Html.CssSelect("title").FirstOrDefault();
             string titleName = Title.InnerText;
@@ -116,8 +116,8 @@ namespace ScrapeService.ScrapeServices
             List<msnData> HeadLines = new List<msnData>();
             Browser.AllowAutoRedirect = true;
             Browser.AllowMetaRedirect = false;
-            Browser.UserAgent = new FakeUserAgent("EdgeAgent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36 Edge/15.15063");
-            WebPage MainPage = await Browser.NavigateToPageAsync(new Uri("http://www.msn.com/en-in/news/"));
+            Browser.UserAgent = new FakeUserAgent("EdgeAgent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36 Edge/18.17763");
+            WebPage MainPage = await Browser.NavigateToPageAsync(new Uri("https://www.msn.com/en-in/news/"));
             //HtmlNode Title = MainPage.Html.CssSelect(".navbar-brand").First();
             HtmlNode Title = MainPage.Html.CssSelect("title").FirstOrDefault();
             string titleName = Title.InnerText;
