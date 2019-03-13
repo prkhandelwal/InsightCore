@@ -13,13 +13,11 @@ namespace Analytics
 
     public class Keywords
     {
-        //static string subscriptionKey = "147dbdfd7dc948c7af909d154166ac32";
-
         class ApiKeyServiceClientCredentials : ServiceClientCredentials
         {
             public override Task ProcessHttpRequestAsync(HttpRequestMessage request, CancellationToken cancellationToken)
             {
-                request.Headers.Add("Ocp-Apim-Subscription-Key", "147dbdfd7dc948c7af909d154166ac32");
+                request.Headers.Add("Ocp-Apim-Subscription-Key", AppSecrets.CognitiveApiKeys);
                 var k = base.ProcessHttpRequestAsync(request, cancellationToken);
                 return k;
             }
